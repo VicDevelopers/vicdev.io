@@ -532,7 +532,9 @@ html, body {
 }
 
 body {
-  color: rgba(255,255,255,0.9);
+  min-height: 100%;
+  position: relative;
+  color: #EEF6FB;
   background: rgba(39,169,230,1);
   background: -moz-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(39,169,230,1)), color-stop(100%, rgba(29,62,194,1)));
@@ -541,8 +543,9 @@ body {
   background: -ms-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
   background: linear-gradient(to bottom, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27a9e6', endColorstr='#1d3ec2', GradientType=0 );
-  padding-top: 100px;
   font-family: 'Raleway', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 h1, h2 {
@@ -550,7 +553,7 @@ h1, h2 {
 }
 
 a {
-  color: rgba(255,255,255,0.9);
+  color: #EEF6FB;
   text-decoration: none;
   border-bottom: 2px solid rgba(255,255,255,0.5);
 }
@@ -585,12 +588,13 @@ a:hover {
 .brand {
   text-align: center;
   font-size: 160px;
-  color: rgba(255,255,255,0.7);
+  color: #BEE1F6;
   text-transform: uppercase;
   margin-bottom: 0.05em;
   margin-top:0;
   line-height: 0.8;
   font-family: 'Dosis', sans-serif;
+  text-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .brand span:nth-child(5) {
@@ -607,8 +611,8 @@ a:hover {
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.8);
   margin:0 0 60px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 
@@ -616,10 +620,11 @@ p {
   font-size: 20px;
   line-height: 1.8;
   letter-spacing: 0.06em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .mc-form {
-  margin: 50px auto 50px;
+  margin: 50px auto 0;
 }
 
 .mc-email,
@@ -647,8 +652,9 @@ p {
   text-align: center;
   border-radius: 5px;
   background: #34DEAF;
-  color: rgba(255,255,255,0.9);
+  color: #EBFCF7;
   font-size: 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
   border: none;
   width: 38%;
   font-size: 20px;
