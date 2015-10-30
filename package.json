@@ -4,7 +4,7 @@
   "description": "vicdev website",
   "main": "index.js",
   "scripts": {
-    "deploy": "surge --domain vicdev.surge.sh -p ./dist",
+    "deploy": "surge --domain vicdev.io -p ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
