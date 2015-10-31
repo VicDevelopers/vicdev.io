@@ -575,7 +575,7 @@ a:hover {
    color: #5088B3;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
    color: #5088B3;
 }
 
@@ -588,13 +588,13 @@ a:hover {
 .brand {
   text-align: center;
   font-size: 160px;
-  color: #BEE1F6;
+  color: #DCEEF9;
   text-transform: uppercase;
   margin-bottom: 0.05em;
   margin-top:0;
   line-height: 0.8;
   font-family: 'Dosis', sans-serif;
-  text-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 .brand span:nth-child(5) {
