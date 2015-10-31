@@ -535,17 +535,8 @@ body {
   min-height: 100%;
   position: relative;
   color: #EEF6FB;
-  background: rgba(39,169,230,1);
-  background: -moz-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(39,169,230,1)), color-stop(100%, rgba(29,62,194,1)));
-  background: -webkit-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
-  background: -o-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
-  background: -ms-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
-  background: linear-gradient(to bottom, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27a9e6', endColorstr='#1d3ec2', GradientType=0 );
   font-family: 'Raleway', sans-serif;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 h1, h2 {
@@ -579,9 +570,21 @@ a:hover {
    color: #5088B3;
 }
 
+.body {
+  min-height:100vh;
+  width:100vw;
+  padding: 100px 20px;
+  background: rgba(39,169,230,1);
+  background: -moz-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(39,169,230,1)), color-stop(100%, rgba(29,62,194,1)));
+  background: -webkit-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
+  background: -o-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
+  background: -ms-linear-gradient(top, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
+  background: linear-gradient(to bottom, rgba(39,169,230,1) 0%, rgba(29,62,194,1) 100%);
+}
+
 .container {
-  width: 90vw;
-  max-width: 600px;
+  max-width: 500px;
   margin:0 auto;
 }
 
@@ -595,6 +598,7 @@ a:hover {
   line-height: 0.8;
   font-family: 'Dosis', sans-serif;
   text-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  max-width: 90vw;
 }
 
 .brand span:nth-child(5) {
@@ -642,8 +646,9 @@ p {
   color: #1F4A6B;
   width: 60%;
   font-size: 20px;
-  line-height:1;
+  line-height:1.6;
   margin-right: 5px;
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
 
 
@@ -662,6 +667,38 @@ p {
   vertical-align: bottom;
 }
 
+
+@media (max-width: 500px) {
+  .body {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .brand {
+    font-size: 29vw;
+  }
+
+  .tagline {
+    font-size: 4.3vw;
+  }
+
+  .container {
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .mc-email,
+  .mc-button {
+    display: block;
+    width: 100%;
+  }
+
+  .mc-email {
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+}
 
 
 
